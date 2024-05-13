@@ -19,6 +19,8 @@ brandon denilson azahar rojas
 
 Licencia
 app creada con fines educativos para proyecto de catedra UDB 2024 
+link del video de youtube 
+https://youtu.be/Bnl19G_Z5Ns
 
 
 
