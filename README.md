@@ -1,25 +1,11 @@
-# proyecto-de-catedra-DPS
+# Sample Snack app
 
+Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
 
+When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
 
+All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
 
-¡app creada con fines educativos!
+If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
 
-Instalación
-Haz clic en el botón "Descargar" o clona el repositorio en tu máquina local.
-Abre una terminal y navega hasta el directorio de la aplicación.
-Ejecuta el comando npm install para instalar todas las dependencias.
- 
-
-Contribución
-eres libre de copiar y modificar este proyecto siempre y cuando des los creditos correspondientes
-Haz un fork del repositorio.
-Crea una nueva rama para tus cambios: git checkout -b feature/nueva-funcion.
-Haz tus modificaciones y haz commit de ellas: git commit -am 'Añade una nueva función'.
-Sube tus cambios a tu repositorio fork: git push origin feature/nueva-funcion.
-Abre un pull request para que revisemos tus cambios y los fusionemos con el repositorio principal.
-Créditos
-Agradecimientos especiales a todas las personas que han contribuido a esta maravillosa aplicación.
-
-Licencia
-esta aplicacion esta siendo desarrollada para fines educativos UDB 2024 se permite su uso y modificacion para fines educativos 
+Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
