@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, StyleSheet, Button, Text } from 'react-native';
 import Splash from './components/pantallas/inicio';
 import Login from './components/pantallas/login';
@@ -14,8 +14,32 @@ import 'firebase/auth';
 
 const Stack = createNativeStackNavigator();
 
+function btoa(data) { 
+  return new base64(data, "binary").toString("base64"); 
+}
+
+function atob(data) { 
+  return new base64(data, "base64").toString("binary"); 
+}
+
 const App = () => {
+  const [user, setUser] = useState(undefined);
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((response) => {
+      setUser(response);
+    });
+  }, []);
+
+  if (user === undefined) return null;
+
   return (
+
+    
+
+
+
+
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
@@ -30,7 +54,7 @@ const App = () => {
         />
         <Stack.Screen
           name="MenuDoc"
-          options={{ title: 'pacientes,citas' }}
+          options={{ title: 'pacientes, citas' }}
           component={Paciente}
         />
         <Stack.Screen
@@ -69,7 +93,7 @@ const Logins = ({ navigation }) => {
 const SplashInicio = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Splash/>
+      <Splash />
       <Button
         title="Iniciar sesión"
         onPress={() => navigation.navigate('IniciarSesion')}
@@ -88,8 +112,6 @@ const SplashInicio = ({ navigation }) => {
     </View>
   );
 };
-
-
 
 export default App;
 
