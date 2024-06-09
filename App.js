@@ -3,7 +3,7 @@ import { View, StyleSheet, Button, Text } from 'react-native';
 import Splash from './components/pantallas/inicio';
 import Login from './components/pantallas/login';
 import Registrarse from './components/pantallas/registrarse';
-import Orden from './components/pantallas/iniciarsession';
+import Paciente from './components/pantallas/ListPaciente';
 import SobreNosotros from './components/pantallas/sobrenosotros';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -31,7 +31,7 @@ const App = () => {
         <Stack.Screen
           name="MenuDoc"
           options={{ title: 'pacientes,citas' }}
-          component={MenuDoc}
+          component={Paciente}
         />
         <Stack.Screen
           name="Registro"
